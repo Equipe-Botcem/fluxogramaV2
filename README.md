@@ -1,6 +1,6 @@
 # Fluxograma Interativo para Matérias do Campus Joinville V2
 
-Esse projeto é uma reformulação do projeto (fluxograma)[https://github.com/Equipe-Botcem/fluxograma]. O objetivo desse fluxograma é auxiliar os estudantes de graduação da UFSC Joinville a realizarem suas matrículas ao destacar quais são os pré-requisitos para cada matéria e exibir em que fases estão localizadas.
+Esse projeto é uma reformulação do projeto [fluxograma](https://github.com/Equipe-Botcem/fluxograma). O objetivo desse fluxograma é auxiliar os estudantes de graduação da UFSC Joinville a realizarem suas matrículas ao destacar quais são os pré-requisitos para cada matéria e exibir em que fases estão localizadas.
 
 ## Reformulação
 
