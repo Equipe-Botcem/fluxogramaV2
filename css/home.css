@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    justify-content: space-between;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+float: left;
+width: 50%;
+padding: 5px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.logo{
+    background-color: #209f9d;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.logo img{
+    width: 250px;
+    height: 250px;
+}
+.instructions{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.desc{
+    margin: 20px;
+    padding: 10px;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+}
+.desc > ol > li{
+    margin: 5px;
+    font-size: 1.5em;
+}
+.white{
+    color: white;
+}
+.p-title{
+    color: #E0E0E0;
+    text-align: center;
+    font-size: 3em;
+    margin: 5px;
+}
+.btn-grid-container{
+  display: grid;
+  background-color: #1E1E1E;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+.btnCmd{
+border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  background: #2f3aff;
+  padding: 10px;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px 20px;
+  transition: 0.3s;
+}
+.btnCmd:hover{
+    background: #040c78;
+    color: #bed7d6;
+}
+.btn1{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  background: #06ece9;
+  padding: 10px;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px 20px;
+  transition: 0.3s;
+}
+.btn1:hover, .btn1.cursoAtivo{
+    background: #047876;
+    color: #bed7d6;
+}
+footer{
+  top:1;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+    .btn-grid-container{
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas maiores que 768px (PC) */
+    }
+  }

@@ -1,0 +1,55 @@
+#fluxograma{
+    display: none;
+    overflow: auto;
+    padding: 15px;
+    background-color: #272727;
+    margin: 30px;
+    transition: 0.3s;
+}
+#cmdBar{
+    display: none;
+}
+.fase{
+    display: flex;
+    flex-direction: column;
+}
+.lLarge .btnFase, .lLarge .btnMateria{
+    min-width: 14em;
+}
+.btnFase{
+    border: 2px solid #000;
+    border-radius: 4px;
+    background: #eeba0e;
+    padding: 2px;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 20px;
+    min-height: 4em;
+    transition: 0.3s;
+}
+.btnFase:hover{
+    filter: brightness(1.1);
+}
+.btnMateria{
+    border: 2px solid #000;
+    border-radius: 4px;
+    background: #D3D6D9;
+    padding: 2px;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 20px;
+    min-height: 4em;
+    transition: 0.3s;
+}
+.btnMateria.btnDestacado{
+    filter: brightness(1.1);
+    scale: 1.1;
+    box-shadow: 0 0 20px #ddff00
+}
+.btnMateria.btnPrereqIme{/*Pre requisito imediato (o que esta no curriculo)*/
+    box-shadow: 0 0 20px #ad0000!important
+}
